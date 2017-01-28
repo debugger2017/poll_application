@@ -1,5 +1,6 @@
 from .models import Question
 from django.shortcuts import render
+from django.http import Http404
 
 def detail(request, question_id):
 	try:
